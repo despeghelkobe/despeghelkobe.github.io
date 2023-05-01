@@ -4,7 +4,7 @@ import React from 'react'
 //screens
 import Home from './Home'
 import About from './About'
-import Contact from './Contact'
+// import Contact from './Contact'
 import Project from './Projects/RC-Car'
 import ProjectContainer from '../components/ProjectContainer'
 import FlappySpace from './Projects/Flappy-Space'
