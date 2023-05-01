@@ -7,7 +7,7 @@ export default () => {
 
   return (
     <div className="flex h-20 items-center justify-between px-8 shadow">
-      <Logo />
+      <Logo position="navbar" />
       <ul className="flex h-full items-center gap-8">
         <li className="h-full">
           <button

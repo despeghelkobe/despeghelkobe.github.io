@@ -1,9 +1,17 @@
 import { useNavigate } from 'react-router-dom'
 
-export default () => {
+export default ({ position }: { position: string }) => {
   const navigate = useNavigate()
   return (
-    <button className="h-full" onClick={() => navigate('/')}>
+    <button
+      className={`h-full border border-y-0 border-transparent focus:outline-none focus-visible:border-gray-300 focus-visible:shadow-inner active:shadow-inner
+      ${
+        position === 'footer'
+          ? 'border border-y focus-visible:border-gray-400'
+          : ''
+      }`}
+      onClick={() => navigate('/')}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 52.5 52"

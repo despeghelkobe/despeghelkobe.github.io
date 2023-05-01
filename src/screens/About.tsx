@@ -1,6 +1,4 @@
 import Navbar from '../components/Navbar'
-import techImage from '../images/technology.jpg'
-import handballImage from '../images/handball.jpg'
 import Footer from '../components/Footer'
 
 export default () => {
@@ -57,9 +55,9 @@ export default () => {
             basics of electronics so I can help make basic projects.
           </p>
         </article>
-        <img src={techImage} alt="image with javascript code" />
+        <img src="/images/technology.jpg" alt="image with javascript code" />
         <img
-          src={handballImage}
+          src="/images/handball.jpg"
           alt="image of person holding a handball in front of a goal"
           className="max-h-40  justify-self-end"
         />

@@ -5,6 +5,9 @@ import React from 'react'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
+import Project from './Projects/RC-Car'
+import ProjectContainer from '../components/ProjectContainer'
+import FlappySpace from './Projects/Flappy-Space'
 
 const router = createBrowserRouter([
   {
@@ -16,9 +19,23 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: '/contact',
-    element: <Contact />,
+    path: '/projects',
+    element: <ProjectContainer />,
+    children: [
+      {
+        path: 'rc-car',
+        element: <Project />,
+      },
+      {
+        path: 'flappy-space',
+        element: <FlappySpace />,
+      },
+    ],
   },
+  // {
+  //   path: '/contact',
+  //   element: <Contact />,
+  // },
 ])
 
 export default () => {
